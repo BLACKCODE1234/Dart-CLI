@@ -45,16 +45,19 @@ menu(){
 
 buy_book(){
   print("\n************** Welcome To The OMANTEN Buy Section ******************");
-  var books = [];
+  var books = ["Maths","Science","Arts","History","English"];
   bool found = false;
   stdout.write("Book Name: ");
   String?book = stdin.readLineSync();
-  for (book1 in books){
-    print('Book is Available');
-  }
-  found = true;
+  if (book != null && book.isNotEmpty){
+    for (book in books){
+      print('Book is Available');
+    found = true;
+    break;
+    }
+   
   menu();
-}
+}}
 
 search_book(){
   print("Search For Books Here!!!");
