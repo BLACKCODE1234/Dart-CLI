@@ -86,6 +86,7 @@ login(){
   var password = stdin.readLineSync();
 
   print("LOGIN SUCCESSFUL");
+  print("$username You are logged in");
   menu();
 }
 
