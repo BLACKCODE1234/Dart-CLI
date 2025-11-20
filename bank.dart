@@ -92,10 +92,13 @@ deposit(){
   try{
     stdout.write('PIN: ');
   String?pin = stdin.readLineSync();
-  if (pin == null || pin.length != 4){
-    print("Wrong PIN");
+  if (pin == null ){
+    print("Enter Pin");
   }
-  else if(pin == null || pin.length == 4){
+  else if(pin.length !=4 ){
+    print("Wrong Pin");
+  }
+  else if(pin.length == 4){
   stdout.write('DEPOSIT: ');
   double deposit = double.parse(stdin.readLineSync()!);
   double balance = 100;
