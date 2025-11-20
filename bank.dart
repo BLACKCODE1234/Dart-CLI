@@ -65,9 +65,11 @@ create_account(){
 
   if (password == repassword){
     print('Account Created Successfully👌✌️👍');
+    print("NAME: $firstname $lastname");
+    print("USERNAME:$Username");
   }
   else if (password != repassword){
-    print('Passwords donot match');
+    print('Passwords do not match');
   }
   else{
     print('Signup not successfull');
