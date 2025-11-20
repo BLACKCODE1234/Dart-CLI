@@ -54,10 +54,17 @@ buy_book(){
       print('Book is Available');
     found = true;
     break;
-    }
-   
+    }}
+
+  if (!found){
+    print("Book Not Available");
+   }
+
+  else{
+    print("Invalid Input");
+  }
   menu();
-}}
+}
 
 search_book(){
   print("Search For Books Here!!!");
